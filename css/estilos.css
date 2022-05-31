@@ -1,29 +1,29 @@
 /* inicio estilo para etiquetas*/
-header{
-    background-color: #622FBD;
-}
 h1 {
     display:inline;
-    color: #17BD36;
+    color: #622FBD;
     font-family: 'Lucida Sans';
     font-size:2.5em; 
-    
+    /*sombra horizontal, sombra vertical, blur, color*/
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px  #fff;
 }
 h2 {
-    color: #17BD36;
+    color:#622FBD;  
     font-family: 'Lucida Sans';
     font-size:1em;
 }
 
 ul {
     list-style: none;
-    font-size:0; /* truco por el uso de inline-block*/
+    font-size:0.5em; /* truco por el uso de inline-block*/
 }
 li {
     display:inline-block;    
     position:relative;
-    padding-left:  70px;
-    padding-right:  70px;   
+    padding-left:  5%;
+    padding-right:  5%;    
 }
 body{
     background-image: url(../multimedia/Imagenes/fondoverde2.jfif);
@@ -35,8 +35,8 @@ body{
 }
 
 section {
-    color: #17BD36;
-    background-color: #622FBD;
+    background-color: #17BD36;
+    color: #622FBD;
     font-style:  normal;
     font-size: x-large;
     padding-bottom: 1%;
@@ -44,7 +44,9 @@ section {
     margin-bottom: 1%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    border: 1px solid WHITE;
+    border-radius: 25px;
 } 
 a {
     text-decoration: none;
@@ -52,8 +54,8 @@ a {
 }
 
 footer {
-    background-color: #622FBD;
-    color: #17BD36;*/
+    background-color:  #17BD36;
+    color: #622FBD;
     font-style:  normal;
     font-size: 24px;
     padding: 0.5%;
@@ -62,26 +64,52 @@ footer {
 /* fin estilo para etiquetas*/
 
 /* inicio estilo para clases*/
-
 .encabezado{
-
     display: inline-block;
     padding-bottom: 0%;
-
 }
-.tarjetas {
-    padding: 100px;
-    margin: 20px;
+/* Inicio de definiciones para  las tarjetas de la pagina principal */
+.tarjeta {
+    padding: 1.5%;
+    margin: 1%;
     background-color: #17BD36;
     border: 1px solid WHITE;
     border-radius: 25px;
-  }
+    display: flex;
+    justify-content: space-around;
+}
 
+.tarjetaEscolar {
+    background-image: url(../multimedia/Imagenes/escolar.jpg);
+    width: 12em;
+    height: 10em;
+    background-size: cover;
+}
+  
+.tarjetaArtistica {
+background-image: url(../multimedia/Imagenes/artistica.jpg);
+width: 12em;
+height: 10em;
+background-size: cover;
+}
+.tarjetaComercial {
+background-image: url(../multimedia/Imagenes/comercial.jpg);
+width: 12em;
+height: 10em;
+background-size: cover;
+}
+.textoResaltado {
+    display:flex;
+    align-items: center;
+}
+/* Fin de definiciones para  las tarjetas de la pagina principal */
 .navegacion {
-    text-decoration-skip: center;
     background-color: #17BD36;
     color: #622FBD;
     font-style:  normal;
+    border: 1px solid WHITE;
+    border-radius: 25px;
+    height: 3em;
 }
 
 .formulario {
@@ -89,9 +117,7 @@ footer {
     border:4px solid #17BD36;
     width:600px;
     height: 200px;
-    
 }
-
 .logoTrebol {
     width:10%;
     padding-right:15em;
@@ -101,7 +127,6 @@ footer {
 .logoCarrito {
     width:5%;
     padding-left:15em;
-   
 }
 
 .multimedia {
@@ -118,7 +143,6 @@ footer {
 .gridProducto {
     display:flex;
     flex-direction: column;
-/*    justify-content: flex-end;        */
     padding: 1em;
     margin: 1em;
     border: 1px solid WHITE;
@@ -128,22 +152,63 @@ footer {
     width:100%;
 }
 .tituloDescripcion {
-    color: #17BD36;
+    color: #622FBD;
     font-family: 'Lucida Sans';
     font-size: 1em;
     text-align: center;
 }
 .detalleDescripcion {
-    color: #17BD36;
+    color:#622FBD;
     font-family: 'Lucida Sans';
     font-size: 0.8em;
     text-align: center;
 }
 .gridPrecio{
-    color: #17BD36;
+    color:#622FBD;
     font-family: 'Lucida Sans';
     font-size: 1.5em;
     text-align: center;
 }
 /*Fin clases para el detalle de los productos a mostrar*/
-/* fin estilo para clases*/
+
+/*Inicio de definicion hover */
+li:hover {
+    color:#622FBD;
+    /*sombra horizontal, sombra vertical, blur, color*/
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px  #fff;
+    }
+    
+.tarjetaEscolar:hover, .tarjetaArtistica:hover, .tarjetaComercial:hover {
+    opacity: 0.7 ; 
+    transform: scale(1.1,1.1);
+}
+/*Fin de definición para hover */
+
+.dondeEstamos{
+    width: 500px;
+    height: 500px;
+    border-radius: 25px;
+    display:flex;
+    align-items: center;
+    animation-name: efecto_aparecer;
+    animation-iteration-count:1;
+    animation-timing-function:ease-in-out;
+    animation-duration: 3s;
+}
+
+@keyframes efecto_aparecer {
+    0%{ opacity: 0; }
+    10%{ opacity:0.1; }
+    20%{ opacity:0.2; }
+    30%{ opacity:0.3; }
+    40%{ opacity:0.4; }
+    50%{ opacity:0.5; }
+    60%{ opacity:0.6; }
+    70%{ opacity:0.7; }
+    80%{ opacity:0.8; }
+    90%{ opacity:0.9; }
+    100%{ opacity: 1; }
+ }
+ 
