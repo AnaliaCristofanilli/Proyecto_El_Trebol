@@ -10,12 +10,13 @@
 </head>
 <body>
     <header>
+
         <section class="encabezado">
-            <img id="logoTrebol" src="../multimedia/Imagenes/Libreriaeltrebol2.jpg" alt="Logo de libreria El trebol"></td>
+            <img class="logoTrebol" src="../multimedia/Imagenes/Libreriaeltrebol2.jpg" alt="Logo de libreria El trebol"></td>
       
             <h1>Librería El trébol</h1>
           
-            <a href="../pages/carrito.html"><img id="logoCarrito" src="../multimedia/Imagenes/carritoverde.jpg" alt="carrito de compras"></a>
+            <a href="../pages/carrito.html"><img class="logoCarrito" src="../multimedia/Imagenes/carritoverde.jpg" alt="carrito de compras"></a>
         </section>  
         <!-- Inicio menú de navegacion. -->
         <nav class="navegacion"> <!-- Se direcciona a secciones de la pagina,solo contacto llama a otro HTML -->
@@ -31,10 +32,127 @@
     </header>
     <main>
         <!-- Inicio de secciones -->
-        <section>
-            <p>
-                Productos escolares:listado de productos con precios
-            </p>  
+          <!-- Armo seccion para las 4 columnas de los productos -->
+          <section class="gridGralProducto">
+            <!-- Armo div para contener los datos de un producto -->
+            <div class="gridProducto">
+                <!-- Armo div para la foto de un producto -->
+                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-2-cierres-basquet-con-luz-led-footy.jpg" alt="Foto Producto">
+                </div>
+                 <!-- Armo div para la descripcion  de un producto -->
+                <div class="gridDescripcion">
+                    <p class="tituloDescripcion">
+                        Canopla 2 cierres BASQUET
+                    </p>
+                    <p class="detalleDescripcion"> 
+                        Con luz led Footy 
+                    </p>
+                </div>
+                <!-- Armo div para el precio  de un producto -->
+                <div class="gridPrecio">$ 3.690,00
+                </div>
+            </div>
+            <!-- repito para cada producto, defino 8, cuando aprenda como hacerlo la idea es alimentar la pagina desde una base de datos -->
+            <div class="gridProducto">
+                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-2-cierres-cool-friends-con-luz-led-footy.jpg" alt="Foto Producto">
+                </div>
+                <div class="gridDescripcion">
+                        <p class="tituloDescripcion">
+                            Canopla 2 cierres COOL FRIENDS
+                        </p>
+                        <p class="detalleDescripcion"> 
+                            Con luz led Footy 
+                        </p>    
+                </div>
+                <div class="gridPrecio">$ 3.690,00
+                </div>
+            </div>   
+
+            <div class="gridProducto">
+                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-2-cierres-estrella-i-con-luz-led-footy.jpg" alt="Foto Producto">
+                </div>
+                <div class="gridDescripcion">
+                    <p class="tituloDescripcion">
+                        Canopla 2 cierres ESTRELLA I
+                    </p>
+                    <p class="detalleDescripcion"> 
+                        Con luz led Footy 
+                    </p>     
+                </div>
+                <div class="gridPrecio">$ 3.431,00
+                </div>
+            </div>
+            <div class="gridProducto"> 
+                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-2-cierres-estrella-ii-con-luz-led-footy.jpg" alt="Foto Producto">
+                </div>
+                <div class="gridDescripcion">
+                    <p class="tituloDescripcion">
+                        Canopla 2 cierres ESTRELLA II
+                    </p>
+                    <p class="detalleDescripcion"> 
+                        Con luz led Footy
+                    </p>     
+                </div>
+                <div class="gridPrecio">$3.431,00
+                </div>
+            </div>
+            <div class="gridProducto">
+                <div class="gridFoto"><img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-box-47-street-mooving.jpg" alt="Foto Producto"> 
+                </div>
+                <div class="gridDescripcion">
+                    <p class="tituloDescripcion">
+                        Canopla Box 47 STREET Mooving 
+                    </p>
+                    <p class="detalleDescripcion"> 
+                        Con detalles y colores exclusivos de Mooving
+                    </p>         
+                </div>
+                <div class="gridPrecio">$ 1.943,70
+                </div>
+            </div>
+            <div class="gridProducto">
+                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-box-among-us-mooving.jpg" alt="Foto Producto">
+                </div>
+                <div class="gridDescripcion">
+                    <p class="tituloDescripcion">
+                        Canopla Box AMONG US Mooving 
+                    </p>
+                    <p class="detalleDescripcion"> 
+                        Con detalles y colores exclusivos de Mooving
+                    </p>             
+                </div>
+                <div class="gridPrecio">$ 1.990,00
+                </div>
+            </div>    
+            <div class="gridProducto">
+                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-box-mickey-mouse-mooving.jpg" alt="Foto Producto">
+                </div>
+                <div class="gridDescripcion">
+                    <p class="tituloDescripcion">
+                        Canopla Box MICKEY MOUSE Mooving 
+                    </p>
+                    <p class="detalleDescripcion"> 
+                        Con dibujo de MICKEY MOUSE en relieve
+                    </p>         
+                </div>
+                <div class="gridPrecio">$ 1.943,59
+                </div>
+            </div>
+            <div class="gridProducto"> 
+                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-box-minnie-mouse-mooving.jpg" alt="Foto Producto">
+                </div>
+                <div class="gridDescripcion">
+                    <p class="tituloDescripcion">
+                        Canopla Box MINNIE MOUSE Mooving
+                    </p>
+                    <p class="detalleDescripcion"> 
+                        Con dibujo de MINNIE MOUSE en relieve
+                    </p>             
+                </div>
+                <div class="gridPrecio">$ 1.943,59
+                </div>
+            </div>
+        </section>
         <!-- Fin de secciones -->
     </main>
    <!-- Inicio footer -->

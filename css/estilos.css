@@ -20,7 +20,6 @@ ul {
     font-size:0; /* truco por el uso de inline-block*/
 }
 li {
-   
     display:inline-block;    
     position:relative;
     padding-left:  70px;
@@ -33,7 +32,6 @@ body{
     background-attachment: fixed;
     font-family: Verdana, sans-serif;
     font-style: italic;
-
 }
 
 section {
@@ -52,9 +50,7 @@ a {
     text-decoration: none;
     font-size: 24px;
 }
-p{
-  text-align: center;
-}
+
 footer {
     background-color: #622FBD;
     color: #17BD36;*/
@@ -66,22 +62,21 @@ footer {
 /* fin estilo para etiquetas*/
 
 /* inicio estilo para clases*/
-.tarjetas {
-  padding: 100px;
-  margin: 20px;
-  background-color: #17BD36;
-  border: 1px solid WHITE;
-  border-radius: 25px;
-}
+
 .encabezado{
 
     display: inline-block;
     padding-bottom: 0%;
 
 }
-.logo  {
-    width:10%;
-}
+.tarjetas {
+    padding: 100px;
+    margin: 20px;
+    background-color: #17BD36;
+    border: 1px solid WHITE;
+    border-radius: 25px;
+  }
+
 .navegacion {
     text-decoration-skip: center;
     background-color: #17BD36;
@@ -89,30 +84,66 @@ footer {
     font-style:  normal;
 }
 
-.multimedia {
-    width:3%;
-}
-
 .formulario {
     background-color: #622FBD;
     border:4px solid #17BD36;
     width:600px;
     height: 200px;
-    /*
-    text-align: center;
-    margin-left: 30%;*/
-        
+    
 }
 
 .logoTrebol {
-    width:5%;
+    width:10%;
     padding-right:15em;
     padding-left: 10px;
     padding-top: 10px;
 }
 .logoCarrito {
-    width:3%;
+    width:5%;
     padding-left:15em;
    
 }
+
+.multimedia {
+    width:3%;
+}
+
+/*Inicio clases para el detalle de los productos a mostrar*/
+.gridGralProducto {
+    display: grid;  			   
+    grid-template-columns: 15em 15em 15em 15em ; /* 5 columnas. Una por producto a mostrar*/
+    grid-template-rows: 25em 25em; 
+}
+
+.gridProducto {
+    display:flex;
+    flex-direction: column;
+/*    justify-content: flex-end;        */
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid WHITE;
+    border-radius: 25px;
+}
+.imgProducto {
+    width:100%;
+}
+.tituloDescripcion {
+    color: #17BD36;
+    font-family: 'Lucida Sans';
+    font-size: 1em;
+    text-align: center;
+}
+.detalleDescripcion {
+    color: #17BD36;
+    font-family: 'Lucida Sans';
+    font-size: 0.8em;
+    text-align: center;
+}
+.gridPrecio{
+    color: #17BD36;
+    font-family: 'Lucida Sans';
+    font-size: 1.5em;
+    text-align: center;
+}
+/*Fin clases para el detalle de los productos a mostrar*/
 /* fin estilo para clases*/
