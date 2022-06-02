@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="css/estilos.css">
     <title>Libreria El Trebol</title>
@@ -11,88 +13,126 @@
 <body>
     <!-- Inicio header -->
     <header>
-        <section class="encabezado">
-            <img class="logoTrebol" src="multimedia/Imagenes/Libreriaeltrebol2.jpg" alt="Logo de libreria El trebol"></td>
-      
-            <h1> Librería El trébol</h1>
-          
-            <a href="pages/carrito.html"><img class="logoCarrito" src="multimedia/Imagenes/carritoverde.jpg" alt="carrito de compras"></a>
-        </section>  
-        <!-- Inicio menú de navegacion. -->
-        <nav class="navegacion"> <!-- Se direcciona a secciones de la pagina,solo contacto llama a otro HTML -->
-            <ul>
-                <li><a href="#promociones">Promociones</a></li>
-                <li><a href="#quienes">Quienes somos</a></li>
-                    <li><a href="#productos">Productos </a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="pages/contacto.html"> Contacto </a></li>
-            </ul>
-        </nav>
-    <!-- Fin  menú de navegacion. -->
-    </header>
+        <section>
+            <div class="container">
+                <div class="row mt-3 align-items-center">
+                    <img class="col-1 " src="multimedia/Imagenes/Libreriaeltrebol2.jpg" alt="Logo de libreria El trebol"></td>
+                    <h1 class="col-4"> Libreria El trébol</h1>
+                    <nav class="col-7 menu">
+                        <ul>
+                            <li><a href="#promociones">Promociones</a></li>
+                            <li><a href="#productos">Productos </a></li>
+                            <li><a href="#servicios">Servicios</a></li>
+                            <li><a href="pages/contacto.html"> Contacto </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    <header>
     <!-- Fin header -->
     <!-- Inicio de main -->
     <main>
       
         <!-- Inicio de secciones -->
-        <section id="promociones" class="tarjeta">
-            <p>
-                Promociones vigentes -agrego para git
-            </p>  
-        </section>
-        <section id="quienes" class="tarjeta">
-            <p>
-                Quienes somos : Contar quienes somos
-            </p>
-        </section>
-        <section id="productos" class="tarjeta">
-            <div class="tarjetaEscolar"> 
-                <a href="pages/productoEscolar.html"  >
-                   <span class="textoResaltado">Escolar</span>  
-                </a>
+        <section id="promociones" class="tarjeta"> 
+            <!-- etiqueta container -->
+            <div  class="container d-flex justify-content-center">
+                <!-- Una fila -->
+                <div class="row  w-50  ">
+                <!-- columnas.  -->
+                    <div class="card col-12 " >
+                        <div id="carouselExampleControls" class="carousel " data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="multimedia/Imagenes/ofertas/Resaltadores 5x4 v1.jpg" class="d-block w-100" alt="Imagen de oferta">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/Imagenes/ofertas/Banner Resma (1).jpg" class="d-block w-100" alt="Imagen de oferta">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/Imagenes/ofertas/Biblioratos 5x4.jpg" class="d-block w-100" alt="Imagen de oferta">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/Imagenes/ofertas/enviochico.png" class="d-block w-100" alt="Imagen de oferta">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/Imagenes/ofertas/mercadopagochico.png" class="d-block w-100" alt="Imagen de oferta">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="tarjetaArtistica"> 
-                <a href="pages/productoArtistica.html">
-                    <span class="textoResaltado">Artistica</span> 
-                </a>
-            </div>
+        <section id="productos" >
+            <div class="container">
+                <div class="row tarjeta">
+                    <div class="col tarjetaEscolar "> 
+                        <a href="pages/productoEscolar.html"  >
+                            <span class="textoResaltado">Escolar</span>  
+                        </a>
+                    </div>
 
-            <div class="tarjetaComercial"> 
-                <a href="pages/productoComercial.html" >
-                    <span class="textoResaltado">Comercial</span> 
-                </a>
-            </div>
+                    <div class="col tarjetaArtistica"> 
+                        <a href="pages/productoArtistica.html">
+                            <span class="textoResaltado">Artistica</span> 
+                        </a>
+                    </div>
+                    <div class="col tarjetaComercial"> 
+                        <a href="pages/productoComercial.html" >
+                            <span class="textoResaltado">Comercial</span> 
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="servicios" class="tarjeta">
-            <div class="tarjetaFotocopia"> 
-                <a href="pages/servicioFotocopia.html">Fotocopias</a>
-            </div>
 
-            <div class="tarjetaImpresion"> 
-                <a href="pages/servicioImpresion.html">Impresiones</a>
+        <section id="servicios" >
+            <div class="container">
+                <div class="tarjeta row">
+                    <div class="tarjetaFotocopia col-6"> 
+                        <a href="pages/servicioFotocopia.html">Fotocopias</a>
+                    </div>
+
+                    <div class="tarjetaImpresion col-6"> 
+                        <a href="pages/servicioImpresion.html">Impresiones</a>
+                    </div>
             </div>
         </section>
-        <!-- Fin de secciones -->
+    <!-- Fin de secciones -->
     </main>
     <!-- Fin de main -->
     <!-- Inicio footer -->
+
     <footer>
-            <!-- Abre facebook de la libreria -->
-            <a href="https://www.facebook.com/Librer%C3%ADa-El-Tr%C3%A9bol-246002999473697/">
-                <img src="multimedia/Imagenes/iconofacebook2.jpg" alt="Facebook" class="multimedia">
-            </a>
-            <!-- Pendiente: Ver como se puede abrir whatsapp para mensajes -->
-            <a href="pages/whatsapp.html">
-                <img src="multimedia/Imagenes/iconoWhatsapp2.jpg" alt="Whatsapp" class="multimedia">
-            </a>
-            <!-- Muestra el mapa con la ubicacion -->
-            <a href="pages/dondeestamos.html">
-                <img src="multimedia/Imagenes/iconomaps1.jpg" alt="dondeestamos" class="multimedia">
-            </a>
+        <div class="container">
+                <!-- Abre facebook de la libreria -->
+                <a href="https://www.facebook.com/Librer%C3%ADa-El-Tr%C3%A9bol-246002999473697/">
+                    <img src="multimedia/Imagenes/iconofacebook2.jpg" alt="Facebook" class="col-4 multimedia">
+                </a>
+                <!-- Pendiente: Ver como se puede abrir whatsapp para mensajes -->
+                <a href="pages/whatsapp.html">
+                    <img src="multimedia/Imagenes/iconoWhatsapp2.jpg" alt="Whatsapp" class="col-4 multimedia">
+                </a>
+                <!-- Muestra el mapa con la ubicacion -->
+                <a href="pages/dondeestamos.html">
+                    <img src="multimedia/Imagenes/iconomaps1.jpg" alt="dondeestamos" class="col multimedia">
+                </a>
+        </div>
     </footer>
     <!-- Fin footer -->
+    <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 <!-- Fin de body -->
 </html>

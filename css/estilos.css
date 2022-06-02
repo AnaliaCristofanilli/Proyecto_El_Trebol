@@ -1,14 +1,14 @@
 /* inicio estilo para etiquetas*/
+
 h1 {
-    display:inline;
     color: #622FBD;
     font-family: 'Lucida Sans';
-    font-size:2.5em; 
-    /*sombra horizontal, sombra vertical, blur, color*/
+    font-size:2em; 
+    /*sombra horizontal, sombra vertical, blur, color */
         text-shadow: 0 0 10px #fff,
         0 0 20px #fff,
         0 0 40px  #fff;
-}
+} 
 h2 {
     color:#622FBD;  
     font-family: 'Lucida Sans';
@@ -34,8 +34,13 @@ body{
     font-style: italic;
 }
 
+label {
+font-family: Verdana, sans-serif;
+font-style: italic;
+font-size:  large;
+}
 section {
-    background-color: #17BD36;
+    background-color: #5ab65c;
     color: #622FBD;
     font-style:  normal;
     font-size: x-large;
@@ -50,11 +55,12 @@ section {
 } 
 a {
     text-decoration: none;
-    font-size: 24px;
+    color: #622FBD;
+    font-size: 18px;
 }
 
 footer {
-    background-color:  #17BD36;
+    background-color:   #5ab65c;
     color: #622FBD;
     font-style:  normal;
     font-size: 24px;
@@ -72,18 +78,13 @@ footer {
 .tarjeta {
     padding: 1.5%;
     margin: 1%;
-    background-color: #17BD36;
-    border: 1px solid WHITE;
-    border-radius: 25px;
-    display: flex;
-    justify-content: space-around;
 }
 
 .tarjetaEscolar {
     background-image: url(../multimedia/Imagenes/escolar.jpg);
-    width: 12em;
-    height: 10em;
     background-size: cover;
+    border-radius: 25px;
+    border:20px;
 }
   
 .tarjetaArtistica {
@@ -91,12 +92,14 @@ background-image: url(../multimedia/Imagenes/artistica.jpg);
 width: 12em;
 height: 10em;
 background-size: cover;
+border-radius: 25px;
 }
 .tarjetaComercial {
 background-image: url(../multimedia/Imagenes/comercial.jpg);
 width: 12em;
 height: 10em;
 background-size: cover;
+border-radius: 25px;
 }
 .textoResaltado {
     display:flex;
@@ -104,7 +107,7 @@ background-size: cover;
 }
 /* Fin de definiciones para  las tarjetas de la pagina principal */
 .navegacion {
-    background-color: #17BD36;
+    background-color: #5ab65c;
     color: #622FBD;
     font-style:  normal;
     border: 1px solid WHITE;
@@ -133,6 +136,10 @@ background-size: cover;
     width:3%;
 }
 
+.btn-color {
+    background-color: #622FBD;
+    color:#fff;
+}
 /*Inicio clases para el detalle de los productos a mostrar*/
 .gridGralProducto {
     display: grid;  			   
@@ -152,6 +159,7 @@ background-size: cover;
     width:100%;
 }
 .tituloDescripcion {
+    padding-top: 1em;
     color: #622FBD;
     font-family: 'Lucida Sans';
     font-size: 1em;
@@ -183,6 +191,12 @@ li:hover {
 .tarjetaEscolar:hover, .tarjetaArtistica:hover, .tarjetaComercial:hover {
     opacity: 0.7 ; 
     transform: scale(1.1,1.1);
+}
+
+.btn-color:hover {
+    color: #622FBD;
+    background-color:#bfa9e4;
+    font-weight: bold;
 }
 /*Fin de definición para hover */
 
