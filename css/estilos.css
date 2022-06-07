@@ -1,135 +1,106 @@
 /* inicio estilo para etiquetas*/
-
 h1 {
     color: #622FBD;
     font-family: 'Lucida Sans';
-    font-size:2em; 
+    font-size:3em; 
+    
     /*sombra horizontal, sombra vertical, blur, color */
+    
         text-shadow: 0 0 10px #fff,
-        0 0 20px #fff,
-        0 0 40px  #fff;
+        0 0 3em #fff,
+        0 0 3em  #fff;
 } 
+ 
 h2 {
     color:#622FBD;  
     font-family: 'Lucida Sans';
-    font-size:1em;
+    font-size:2em;
 }
-
+ 
 ul {
     list-style: none;
     font-size:0.5em; /* truco por el uso de inline-block*/
-}
+} 
+
 li {
     display:inline-block;    
     position:relative;
-    padding-left:  5%;
-    padding-right:  5%;    
+ 
+    padding-right:  1em;
+    font-size: 2em;
+    color:#622FBD;
+    width: 10em;
 }
-body{
-    background-image: url(../multimedia/Imagenes/fondoverde2.jfif);
-    background-size: 100%    ;
+
+a  {
+    text-decoration: none;
+}
+body{   
+    background-color: #8ddc8e;
+ /*   background-image: url(../multimedia/Imagenes/fondoverde2.jfif);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
     font-family: Verdana, sans-serif;
     font-style: italic;
 }
-
-label {
-font-family: Verdana, sans-serif;
-font-style: italic;
-font-size:  large;
+p {
+    font-family: Verdana, sans-serif;
+    font-style: italic;
+    font-size:  1em;
 }
-section {
-    background-color: #5ab65c;
-    color: #622FBD;
-    font-style:  normal;
-    font-size: x-large;
-    padding-bottom: 1%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border: 1px solid WHITE;
-    border-radius: 25px;
-} 
-a {
-    text-decoration: none;
-    color: #622FBD;
-    font-size: 18px;
-}
-
-footer {
-    background-color:   #5ab65c;
-    color: #622FBD;
-    font-style:  normal;
-    font-size: 24px;
-    padding: 0.5%;
- }
-
 /* fin estilo para etiquetas*/
 
 /* inicio estilo para clases*/
-.encabezado{
-    display: inline-block;
-    padding-bottom: 0%;
-}
-/* Inicio de definiciones para  las tarjetas de la pagina principal */
+.contenedor{ 
+    background-color: #5ab65c;
+    color: #622FBD;
+    font-style:  normal;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 0.05em solid WHITE;
+    border-radius: 1em;
+    }
+    .itemMenu {
+        font-size: 0.5em;
+    }
+    .itemNombre {
+        color:#622FBD;
+        font-size:1em;
+    }
 .tarjeta {
-    padding: 1.5%;
-    margin: 1%;
-}
-
-.tarjetaEscolar {
-    background-image: url(../multimedia/Imagenes/escolar.jpg);
     background-size: cover;
     border-radius: 25px;
-    border:20px;
+    padding-left: 3em;
+    padding-right: 3em;
+    width: 20em;
+    height: 10em;
 }
-  
+.tarjetaEscolar {
+    background-image: url(../multimedia/Imagenes/escolar.jpg);
+}
 .tarjetaArtistica {
-background-image: url(../multimedia/Imagenes/artistica.jpg);
-width: 12em;
-height: 10em;
-background-size: cover;
-border-radius: 25px;
+    background-image: url(../multimedia/Imagenes/artistica.jpg);
 }
 .tarjetaComercial {
 background-image: url(../multimedia/Imagenes/comercial.jpg);
-width: 12em;
-height: 10em;
-background-size: cover;
-border-radius: 25px;
+}
+.tarjetaFotocopia {
+    background-image: url(../multimedia/Imagenes/Fotocopia1.jfif);
+}
+.tarjetaImpresion {
+    background-image: url(../multimedia/Imagenes/Impresiones1.jfif);
 }
 .textoResaltado {
     display:flex;
     align-items: center;
 }
-/* Fin de definiciones para  las tarjetas de la pagina principal */
-.navegacion {
-    background-color: #5ab65c;
-    color: #622FBD;
-    font-style:  normal;
-    border: 1px solid WHITE;
-    border-radius: 25px;
-    height: 3em;
-}
 
-.formulario {
-    background-color: #622FBD;
-    border:4px solid #17BD36;
-    width:600px;
-    height: 200px;
-}
 .logoTrebol {
-    width:10%;
-    padding-right:15em;
-    padding-left: 10px;
-    padding-top: 10px;
-}
-.logoCarrito {
-    width:5%;
-    padding-left:15em;
+    width:100%;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 2em;
 }
 
 .multimedia {
@@ -146,7 +117,6 @@ border-radius: 25px;
     grid-template-columns: 15em 15em 15em 15em ; /* 5 columnas. Una por producto a mostrar*/
     grid-template-rows: 25em 25em; 
 }
-
 .gridProducto {
     display:flex;
     flex-direction: column;
@@ -178,7 +148,6 @@ border-radius: 25px;
     text-align: center;
 }
 /*Fin clases para el detalle de los productos a mostrar*/
-
 /*Inicio de definicion hover */
 li:hover {
     color:#622FBD;
@@ -187,31 +156,30 @@ li:hover {
     0 0 20px #fff,
     0 0 40px  #fff;
     }
-    
 .tarjetaEscolar:hover, .tarjetaArtistica:hover, .tarjetaComercial:hover {
     opacity: 0.7 ; 
     transform: scale(1.1,1.1);
 }
-
 .btn-color:hover {
     color: #622FBD;
     background-color:#bfa9e4;
     font-weight: bold;
 }
 /*Fin de definición para hover */
-
+/*Inicio animaciones/transformaciones */
 .dondeEstamos{
     width: 500px;
     height: 500px;
     border-radius: 25px;
     display:flex;
     align-items: center;
+}
+.mostrarLento {
     animation-name: efecto_aparecer;
     animation-iteration-count:1;
     animation-timing-function:ease-in-out;
     animation-duration: 3s;
 }
-
 @keyframes efecto_aparecer {
     0%{ opacity: 0; }
     10%{ opacity:0.1; }
@@ -225,4 +193,12 @@ li:hover {
     90%{ opacity:0.9; }
     100%{ opacity: 1; }
  }
+ /*Fin animaciones/transformaciones */
+ /*Inicio breakpoints*/
+ @media (max-width: 768px) { 
+     #productos{display: none;}
+     #servicios{display: none;}
+     #quienesSomos{display: none;}
+  }
+/*Inicio breakpoints*/
  
