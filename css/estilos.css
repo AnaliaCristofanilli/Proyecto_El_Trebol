@@ -1,204 +1,194 @@
-/* inicio estilo para etiquetas*/
+/*Etiquetas HTML*/
 h1 {
-    color: #622FBD;
-    font-family: 'Lucida Sans';
-    font-size:3em; 
-    
-    /*sombra horizontal, sombra vertical, blur, color */
-    
-        text-shadow: 0 0 10px #fff,
-        0 0 3em #fff,
-        0 0 3em  #fff;
-} 
- 
+  color: #622FBD;
+  font-family: 'Lucida Sans';
+  font-size: 3em;
+  text-shadow: 0 0 10px #fff, 0 0 3em #fff, 0 0 3em #fff; }
+
 h2 {
-    color:#622FBD;  
-    font-family: 'Lucida Sans';
-    font-size:2em;
-}
- 
+  color: #622FBD;
+  font-family: "Lucida Sans";
+  font-size: 2em; }
+
 ul {
-    list-style: none;
-    font-size:0.5em; /* truco por el uso de inline-block*/
-} 
-
-li {
-    display:inline-block;    
-    position:relative;
- 
-    padding-right:  1em;
+  list-style: none;
+  font-size: 0.5em; }
+  ul li {
+    display: inline-block;
+    position: relative;
+    padding-right: 1em;
     font-size: 2em;
-    color:#622FBD;
-    width: 10em;
-}
-
-a  {
-    text-decoration: none;
-}
-body{   
-    background-color: #8ddc8e;
- /*   background-image: url(../multimedia/Imagenes/fondoverde2.jfif);
-    background-repeat: no-repeat;
-    background-attachment: fixed;*/
-    font-family: Verdana, sans-serif;
-    font-style: italic;
-}
-p {
-    font-family: Verdana, sans-serif;
-    font-style: italic;
-    font-size:  1em;
-}
-/* fin estilo para etiquetas*/
-
-/* inicio estilo para clases*/
-.contenedor{ 
-    background-color: #5ab65c;
     color: #622FBD;
-    font-style:  normal;
-    padding-bottom: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border: 0.05em solid WHITE;
-    border-radius: 1em;
-    }
-    .itemMenu {
-        font-size: 0.5em;
-    }
-    .itemNombre {
-        color:#622FBD;
-        font-size:1em;
-    }
+    width: 10em; }
+    ul li:hover {
+      color: #622FBD;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background-color: #8ddc8e;
+  font-family: Verdana, sans-serif;
+  font-style: normal; }
+
+p {
+  font-family: Verdana, sans-serif;
+  font-style: italic;
+  font-size: 1em; }
+
+/*Clases*/
+.contenedor {
+  background-color: #5ab65c;
+  color: #622FBD;
+  font-style: normal;
+  padding-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 0.05em solid #fff;
+  border-radius: 1em; }
+
+.itemMenu {
+  font-size: 0.5em; }
+
+.itemNombre {
+  color: #622FBD;
+  font-size: 1em; }
+
 .tarjeta {
-    background-size: cover;
-    border-radius: 25px;
-    padding-left: 3em;
-    padding-right: 3em;
-    width: 20em;
-    height: 10em;
-}
+  background-size: cover;
+  border-radius: 25px;
+  padding-left: 3em;
+  padding-right: 3em;
+  width: 20em;
+  height: 10em; }
+
 .tarjetaEscolar {
-    background-image: url(../multimedia/Imagenes/escolar.jpg);
-}
+  background-image: url(../multimedia/Imagenes/escolar.jpg); }
+  .tarjetaEscolar:hover {
+    opacity: 0.7;
+    transform: scale(1.1, 1.1); }
+
 .tarjetaArtistica {
-    background-image: url(../multimedia/Imagenes/artistica.jpg);
-}
+  background-image: url(../../../multimedia/Imagenes/artistica.jpg); }
+  .tarjetaArtistica:hover {
+    opacity: 0.7;
+    transform: scale(1.1, 1.1); }
+
 .tarjetaComercial {
-background-image: url(../multimedia/Imagenes/comercial.jpg);
-}
+  background-image: url(../../multimedia/Imagenes/comercial.jpg); }
+  .tarjetaComercial:hover {
+    opacity: 0.7;
+    transform: scale(1.1, 1.1); }
+
 .tarjetaFotocopia {
-    background-image: url(../multimedia/Imagenes/Fotocopia1.jfif);
-}
+  background-image: url(../../multimedia/Imagenes/Fotocopia1.jfif); }
+  .tarjetaFotocopia:hover {
+    opacity: 0.7;
+    transform: scale(1.1, 1.1); }
+
 .tarjetaImpresion {
-    background-image: url(../multimedia/Imagenes/Impresiones1.jfif);
-}
-.textoResaltado {
-    display:flex;
-    align-items: center;
-}
+  background-image: url(../../multimedia/Imagenes/Impresiones1.jfif); }
+  .tarjetaImpresion:hover {
+    opacity: 0.7;
+    transform: scale(1.1, 1.1); }
 
 .logoTrebol {
-    width:100%;
-    padding-right: 2em;
-    padding-left: 2em;
-    padding-top: 2em;
-}
+  width: 100%;
+  padding-right: 2em;
+  padding-left: 2em;
+  padding-top: 2em; }
 
 .multimedia {
-    width:3%;
-}
+  width: 3%; }
 
 .btn-color {
-    background-color: #622FBD;
-    color:#fff;
-}
-/*Inicio clases para el detalle de los productos a mostrar*/
+  background-color: #622FBD;
+  color: #fff; }
+  .btn-color:hover {
+    color: #622FBD;
+    background-color: #9a75dd;
+    font-weight: bold; }
+
+/*Clases para el detalle de los productos a mostrar*/
 .gridGralProducto {
-    display: grid;  			   
-    grid-template-columns: 15em 15em 15em 15em ; /* 5 columnas. Una por producto a mostrar*/
-    grid-template-rows: 25em 25em; 
-}
+  display: grid;
+  grid-template-columns: 15em 15em 15em 15em;
+  grid-template-rows: 25em 25em; }
+
 .gridProducto {
-    display:flex;
-    flex-direction: column;
-    padding: 1em;
-    margin: 1em;
-    border: 1px solid WHITE;
-    border-radius: 25px;
-}
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: 1em;
+  border: 0.05em solid #fff;
+  border-radius: 25px; }
+
 .imgProducto {
-    width:100%;
-}
+  width: 100%; }
+
 .tituloDescripcion {
-    padding-top: 1em;
-    color: #622FBD;
-    font-family: 'Lucida Sans';
-    font-size: 1em;
-    text-align: center;
-}
+  padding-top: 1em;
+  color: #622FBD;
+  font-family: "Lucida Sans";
+  font-size: 1em;
+  text-align: center; }
+
 .detalleDescripcion {
-    color:#622FBD;
-    font-family: 'Lucida Sans';
-    font-size: 0.8em;
-    text-align: center;
-}
-.gridPrecio{
-    color:#622FBD;
-    font-family: 'Lucida Sans';
-    font-size: 1.5em;
-    text-align: center;
-}
-/*Fin clases para el detalle de los productos a mostrar*/
-/*Inicio de definicion hover */
-li:hover {
-    color:#622FBD;
-    /*sombra horizontal, sombra vertical, blur, color*/
-    text-shadow: 0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 40px  #fff;
-    }
-.tarjetaEscolar:hover, .tarjetaArtistica:hover, .tarjetaComercial:hover {
-    opacity: 0.7 ; 
-    transform: scale(1.1,1.1);
-}
-.btn-color:hover {
-    color: #622FBD;
-    background-color:#bfa9e4;
-    font-weight: bold;
-}
-/*Fin de definición para hover */
-/*Inicio animaciones/transformaciones */
-.dondeEstamos{
-    width: 500px;
-    height: 500px;
-    border-radius: 25px;
-    display:flex;
-    align-items: center;
-}
+  color: #622FBD;
+  font-family: Verdana, sans-serif;
+  font-size: 0.8em;
+  text-align: center; }
+
+.gridPrecio {
+  color: #622FBD;
+  font-family: Verdana, sans-serif;
+  font-size: 1.5em;
+  text-align: center; }
+
+/* Animaciones/transformaciones */
+.dondeEstamos {
+  width: 500px;
+  height: 500px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center; }
+
 .mostrarLento {
-    animation-name: efecto_aparecer;
-    animation-iteration-count:1;
-    animation-timing-function:ease-in-out;
-    animation-duration: 3s;
-}
+  animation-name: efecto_aparecer;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s; }
+
 @keyframes efecto_aparecer {
-    0%{ opacity: 0; }
-    10%{ opacity:0.1; }
-    20%{ opacity:0.2; }
-    30%{ opacity:0.3; }
-    40%{ opacity:0.4; }
-    50%{ opacity:0.5; }
-    60%{ opacity:0.6; }
-    70%{ opacity:0.7; }
-    80%{ opacity:0.8; }
-    90%{ opacity:0.9; }
-    100%{ opacity: 1; }
- }
- /*Fin animaciones/transformaciones */
- /*Inicio breakpoints*/
- @media (max-width: 768px) { 
-     #productos{display: none;}
-     #servicios{display: none;}
-     #quienesSomos{display: none;}
-  }
-/*Inicio breakpoints*/
- 
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 0.1; }
+  20% {
+    opacity: 0.2; }
+  30% {
+    opacity: 0.3; }
+  40% {
+    opacity: 0.4; }
+  50% {
+    opacity: 0.5; }
+  60% {
+    opacity: 0.6; }
+  70% {
+    opacity: 0.7; }
+  80% {
+    opacity: 0.8; }
+  90% {
+    opacity: 0.9; }
+  100% {
+    opacity: 1; } }
+
+/*Breakpoints*/
+@media (max-width: 768px) {
+  #productos {
+    display: none; }
+  #servicios {
+    display: none; }
+  #quienesSomos {
+    display: none; } }

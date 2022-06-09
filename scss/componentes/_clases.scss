@@ -1,0 +1,153 @@
+@import "_variables";
+/*Clases*/
+.contenedor{ 
+    background-color:$colorBackContenedor;
+    color: $color;
+    font-style:  $fontStyleDetalle;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: $borderContenedor;
+    border-radius: 1em;
+    }
+.itemMenu {
+    font-size: 0.5em;
+}
+.itemNombre {
+    color:$color;
+    font-size:1em;
+}
+.tarjeta {
+    background-size: cover;
+    border-radius: 25px;
+    padding-left: 3em;
+    padding-right: 3em;
+    width: 20em;
+    height: 10em;
+}
+.tarjetaEscolar {
+    background-image: url(../multimedia/Imagenes/escolar.jpg);
+    &:hover {
+        opacity: 0.7 ; 
+        transform: scale(1.1,1.1);
+    }
+}
+.tarjetaArtistica {
+    background-image: url(../../../multimedia/Imagenes/artistica.jpg);
+    &:hover {
+        opacity: 0.7 ; 
+        transform: scale(1.1,1.1);
+    }
+}
+.tarjetaComercial {
+background-image: url(../../multimedia/Imagenes/comercial.jpg);
+    &:hover {
+        opacity: 0.7 ; 
+        transform: scale(1.1,1.1);
+    } 
+}
+.tarjetaFotocopia {
+    background-image: url(../../multimedia/Imagenes/Fotocopia1.jfif);
+    &:hover {
+        opacity: 0.7 ; 
+        transform: scale(1.1,1.1);
+    }
+}
+.tarjetaImpresion {
+    background-image: url(../../multimedia/Imagenes/Impresiones1.jfif);
+    &:hover {
+        opacity: 0.7 ; 
+        transform: scale(1.1,1.1);
+    }
+}
+.logoTrebol {
+    width:100%;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+.multimedia {
+    width:3%;
+}
+
+.btn-color {
+    background-color: $colorBoton;
+    color:$colorShadow;
+    &:hover {
+        color: $color;
+        background-color:lighten($color,20%);
+        font-weight: bold;
+    }
+}
+
+/*Clases para el detalle de los productos a mostrar*/
+.gridGralProducto {
+    display: grid;  			   
+    grid-template-columns: 15em 15em 15em 15em ; // 5 columnas. Una por producto a mostrar*/
+    grid-template-rows: 25em 25em; 
+}
+.gridProducto {
+    display:flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 1em;
+    border: $borderContenedor;
+    border-radius: 25px;
+}
+.imgProducto {
+    width:100%;
+}
+.tituloDescripcion {
+    padding-top: 1em;
+    color: $color;
+    font-family:$fontFamilyTitulo;
+    font-size: 1em;
+    text-align: center;
+}
+.detalleDescripcion {
+    color:$color;
+    font-family: $fontFamilyDetalle;
+    font-size: 0.8em;
+    text-align: center;
+}
+.gridPrecio{
+    color:$color;
+    font-family: $fontFamilyDetalle;
+    font-size: 1.5em;
+    text-align: center;
+}
+/* Animaciones/transformaciones */
+.dondeEstamos{
+    width: 500px;
+    height: 500px;
+    border-radius: 25px;
+    display:flex;
+    align-items: center;
+}
+.mostrarLento {
+    animation-name: efecto_aparecer;
+    animation-iteration-count:1;
+    animation-timing-function:ease-in-out;
+    animation-duration: 3s;
+}
+@keyframes efecto_aparecer {
+    0%{ opacity: 0; }
+    10%{ opacity:0.1; }
+    20%{ opacity:0.2; }
+    30%{ opacity:0.3; }
+    40%{ opacity:0.4; }
+    50%{ opacity:0.5; }
+    60%{ opacity:0.6; }
+    70%{ opacity:0.7; }
+    80%{ opacity:0.8; }
+    90%{ opacity:0.9; }
+    100%{ opacity: 1; }
+ }
+
+ /*Breakpoints*/
+ @media (max-width: 768px) { 
+     #productos{display: none;}
+     #servicios{display: none;}
+     #quienesSomos{display: none;}
+  }

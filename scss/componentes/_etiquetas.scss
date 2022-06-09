@@ -1,0 +1,53 @@
+@import "_variables";
+/*Etiquetas HTML*/
+
+h1 {
+    color: $color;
+    font-family: 'Lucida Sans';
+    font-size:3em; 
+    
+    //sombra horizontal, sombra vertical, blur, color 
+    
+        text-shadow: 0 0 10px $colorShadow,
+        0 0 3em $colorShadow,
+        0 0 3em  $colorShadow;
+} 
+h2 {
+    color:$color;  
+    font-family: $fontFamilyTitulo;
+    font-size:2em;
+}
+ 
+ul {
+    list-style: none;
+    font-size:0.5em; // truco por el uso de inline-block
+    li {
+        display:inline-block;    
+        position:relative;
+     
+        padding-right:  1em;
+        font-size: 2em;
+        color:$color;
+        width: 10em;
+        &:hover {
+            color:$color;
+            //sombra horizontal, sombra vertical, blur, color
+            text-shadow: 0 0 10px $colorShadow,
+            0 0 20px $colorShadow,
+            0 0 40px $colorShadow;
+            }
+    }
+} 
+a  {
+    text-decoration: none;
+}
+
+body{   
+    background-color: $colorBackGral;
+    font-family: $fontFamilyDetalle;
+    font-style: $fontStyleDetalle;
+}
+p {
+    font-family: Verdana, sans-serif;
+    font-style: italic;
+    font-size:  1em;}
