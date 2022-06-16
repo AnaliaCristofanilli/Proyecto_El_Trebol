@@ -10,9 +10,6 @@
     border: $borderContenedor;
     border-radius: 1em;
     }
-.itemMenu {
-    font-size: 0.5em;
-}
 .itemNombre {
     color:$color;
     font-size:1em;
@@ -26,35 +23,35 @@
     height: 10em;
 }
 .tarjetaEscolar {
-    background-image: url(../multimedia/Imagenes/escolar.jpg);
+    background-image: url(../multimedia/Imagenes/escolar.webp);
     &:hover {
         opacity: 0.7 ; 
         transform: scale(1.1,1.1);
     }
 }
 .tarjetaArtistica {
-    background-image: url(../../../multimedia/Imagenes/artistica.jpg);
+    background-image: url(../../../multimedia/Imagenes/artistica.webp);
     &:hover {
         opacity: 0.7 ; 
         transform: scale(1.1,1.1);
     }
 }
 .tarjetaComercial {
-background-image: url(../../multimedia/Imagenes/comercial.jpg);
+background-image: url(../../multimedia/Imagenes/comercial.webp);
     &:hover {
         opacity: 0.7 ; 
         transform: scale(1.1,1.1);
     } 
 }
 .tarjetaFotocopia {
-    background-image: url(../../multimedia/Imagenes/Fotocopia1.jfif);
+    background-image: url(../../multimedia/Imagenes/Fotocopia1.webp);
     &:hover {
         opacity: 0.7 ; 
         transform: scale(1.1,1.1);
     }
 }
 .tarjetaImpresion {
-    background-image: url(../../multimedia/Imagenes/Impresiones1.jfif);
+    background-image: url(../../multimedia/Imagenes/Impresiones1.webp);
     &:hover {
         opacity: 0.7 ; 
         transform: scale(1.1,1.1);
@@ -82,40 +79,17 @@ background-image: url(../../multimedia/Imagenes/comercial.jpg);
 }
 
 /*Clases para el detalle de los productos a mostrar*/
-.gridGralProducto {
-    display: grid;  			   
-    grid-template-columns: 15em 15em 15em 15em ; // 5 columnas. Una por producto a mostrar*/
-    grid-template-rows: 25em 25em; 
-}
 .gridProducto {
-    display:flex;
-    flex-direction: column;
-    padding: 1em;
-    margin: 1em;
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     border: $borderContenedor;
     border-radius: 25px;
+    width: 18rem;
 }
 .imgProducto {
     width:100%;
-}
-.tituloDescripcion {
-    padding-top: 1em;
-    color: $color;
-    font-family:$fontFamilyTitulo;
-    font-size: 1em;
-    text-align: center;
-}
-.detalleDescripcion {
-    color:$color;
-    font-family: $fontFamilyDetalle;
-    font-size: 0.8em;
-    text-align: center;
-}
-.gridPrecio{
-    color:$color;
-    font-family: $fontFamilyDetalle;
-    font-size: 1.5em;
-    text-align: center;
 }
 /* Animaciones/transformaciones */
 .dondeEstamos{

@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Libreria El Trebol - productos comerciales">
+    <meta name="keywords" content="Libreria, libreria escolar, libreria artistica, libreria comercial, impresiones laser, fotocopias">
+
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
      <!-- CSS -->
      <link rel="stylesheet" href="../css/estilos.css">
-    <title>Productos - Comercial</title>
+    <title>Libreria El Trebol - Productos para tu oficina</title>
 </head>
 <body>
     <header class="contenedor container">
         <nav class="navbar navbar-expand-lg  ">
             <div class="container">
               <a class="navbar-brand w-25" href="#">
-                <img class="logoTrebol" src="../multimedia/Imagenes/Libreriaeltrebol2.jpg" alt="Logo de libreria El trebol">
+                <img class="logoTrebol" src="../multimedia/Imagenes/Libreriaeltrebol2.webp" alt="Logo de libreria El trebol">
               </a>
               <div class="container-fluid">
                   <h1>Librería El trébol </h1>
@@ -32,16 +35,20 @@
                     <a class="nav-link dropdown-toggle itemNombre" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Productos
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="itemMenu" href="../pages/productoEscolar.html">Escolar</a></li>
-                        <li><a class="itemMenu" href="../pages/productoArtistica.html">Artística</a></li>
-                        <li><a class="itemMenu" href="../pages/productoComercial.html">Comercial</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../pages/productoEscolar.html">Escolar</a>
+                        <a class="dropdown-item" href="../pages/productoArtistica.html">Artística</a>
+                        <a class="dropdown-item" href="../pages/productoComercial.html">Comercial</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle itemNombre" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Servicios
                     </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../pages/servicioFotocopia.html">Fotocopias</a>
+                        <a class="dropdown-item" href="../pages/servicioImpresion.html">Impresiones</a>
+                    </div>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="itemMenu" href="../pages/servicioFotocopia.html">Fotocopias</a></li>
                         <li><a class="itemMenu" href="../pages/servicioImpresion.html">Impresiones</a></li>
@@ -58,142 +65,96 @@
     <!-- Fin header -->
     <main>
         <!-- Inicio de secciones -->
-        <!-- Armo seccion para las 4 columnas de los productos -->
-        <section class="gridGralProducto contenedor container">
-            <!-- Armo div para contener los datos de un producto -->
-            <div class="gridProducto">
+    <!-- Armo seccion para las 4 columnas de los productos -->
+    <section class="container">
+        <!-- Armo div para contener los datos de un producto -->
+        <div class="row">
+            <div class="card col-4 gridProducto">
                 <!-- Armo div para la foto de un producto -->
-                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Comercial/Abrochadora/abrochadora-brief-para-broches-n10-mit.jpg" alt="Foto Producto">
-                </div>
-                 <!-- Armo div para la descripcion  de un producto -->
-                <div class="gridDescripcion">
-                    <p class="tituloDescripcion">
-                        Abrochadora Brief para broches Nº10 MIT
-                    </p>
-                    <p class="detalleDescripcion"> 
-                        Utiliza broches nº10 y su formato es de 11x4 cm. 
-                    </p>
-                </div>
-                <!-- Armo div para el precio  de un producto -->
-                <div class="gridPrecio">$ 604,50
+                <img class="imgProducto" src="../multimedia/Imagenes/Comercial/Abrochadora/abrochadora-brief-para-broches-n10-mit.jpg" alt="Foto abrochadora brief N10">
+                <!-- Armo div para la descripcion  de un producto -->
+                <div class="card-body">
+                    <h5 class="card-title">Abrochadora Brief</h5>
+                    <p class="card-text">Broches nº10 - 11x4 cm.</p>
+                    <h5 class="card-text">$ 604,50</h5>
                 </div>
             </div>
             <!-- repito para cada producto, defino 8, cuando aprenda como hacerlo la idea es alimentar la pagina desde una base de datos -->
-            <div class="gridProducto">
-                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Comercial/Abrochadora/abrochadora-counter-para-broches-n216-mit.jpg" alt="Foto Producto">
-                </div>
-                <div class="gridDescripcion">
-                        <p class="tituloDescripcion">
-                            Abrochadora Counter para broches Nº 21/6 MIT
-                        </p>
-                        <p class="detalleDescripcion"> 
-                            Utiliza Broches MIT 21/6.
-                            Abrocha de 1 a 25 hojas. 
-                        </p>    
-                </div>
-                <div class="gridPrecio">$ 1.627,00
+            <div class="card col-4 gridProducto">
+                <img class="imgProducto" src="../multimedia/Imagenes/Comercial/Abrochadora/abrochadora-counter-para-broches-n216-mit.jpg" alt="Foto abrochadora counter N216">
+                <div class="card-body">
+                    <h5 class="card-title">Abrochadora Counter</h5>
+                    <p class="card-text">MIT 21/6.</p>  
+                    <h5 class="card-text">$ 1.627,00</h5>   
                 </div>
             </div>   
-            <div class="gridProducto">
-                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Comercial/Abrochadora/abrochadora-hp-100-para-broches-n10-kangaro.jpg" alt="Foto Producto">
-                </div>
-                <div class="gridDescripcion">
-                    <p class="tituloDescripcion">
-                        Abrochadora HP-100 para broches Nº10 Kangaro
-                    </p>
-                    <p class="detalleDescripcion"> 
-                        Metálica modelo HP-100 para broches Nº10
-                    </p>     
-                </div>
-                <div class="gridPrecio">$ 2.500,00
+            <div class="card col-4 gridProducto">
+                <img class="imgProducto" src="../multimedia/Imagenes/Comercial/Abrochadora/abrochadora-hp-100-para-broches-n10-kangaro.jpg" alt="Foto abrochadora HP N10">
+                <div class="card-body">
+                    <h5 class="card-title">Abrochadora HP-100</h5>
+                    <p class="card-text">Metálica Nº10</p>     
+                    <h5 class="card-text">$ 2.500,00</h5>   
                 </div>
             </div>
-            <div class="gridProducto"> 
-                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Comercial/Abrochadora/abrochadora-engrampadora-bulit.jpg" alt="Foto Producto">
-                </div>
-                <div class="gridDescripcion">
-                    <p class="tituloDescripcion">
-                        Abrochadora Engrampadora BULIT
-                    </p>
-                    <p class="detalleDescripcion"> 
-                        Ideal para tapiceria, encuadernacion, decoracion, hobbies y más
-                    </p>     
-                </div>
-                <div class="gridPrecio">$ 3.849,99
+            <div class="card col-4 gridProducto"> 
+                <img class="imgProducto" src="../multimedia/Imagenes/Comercial/Abrochadora/abrochadora-engrampadora-bulit.jpg" alt="Foto Engrampadora bulit">
+                <div class="card-body">
+                    <h5 class="card-title">Engrampadora BULIT</h5>
+                    <p class="card-text">Ideal para tapiceria, encuadernacion, hobbies y más</p>
+                    <h5 class="card-text">$ 3.849,99</h5>      
                 </div>
             </div>
-            <div class="gridProducto">
-                <div class="gridFoto"><img class="imgProducto" src="../multimedia/Imagenes/Comercial/Biblioratos/bibliorato-lomo-angosto-a4-azul-onix.jpg" alt="Foto Producto"> 
-                </div>
-                <div class="gridDescripcion">
-                    <p class="tituloDescripcion">
-                        Bibliorato lomo angosto 
-                    </p>
-                    <p class="detalleDescripcion"> 
-                        A4 Azul
-                    </p>         
-                </div>
-                <div class="gridPrecio">$ 827,70
+        </div>   
+        <div class="row"> 
+            <div class="card col-4 gridProducto">
+                <img class="imgProducto" src="../multimedia/Imagenes/Comercial/Biblioratos/bibliorato-lomo-angosto-a4-azul-onix.jpg" alt="Foto bibliorato angosto azul"> 
+                <div class="card-body">
+                    <h5 class="card-title">Bibliorato angosto</h5>
+                    <p class="card-text">A4 Azul</p>         
+                    <h5 class="card-text">$ 827,70</h5> 
                 </div>
             </div>
-            <div class="gridProducto">
-                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Comercial/Biblioratos/bibliorato-lomo-angosto-a4-blanco-onix.jpg" alt="Foto Producto">
-                </div>
-                <div class="gridDescripcion">
-                    <p class="tituloDescripcion">
-                        Bibliorato lomo angosto 
-                    </p>
-                    <p class="detalleDescripcion"> 
-                        A4 Blanco
-                    </p>             
-                </div>
-                <div class="gridPrecio">$ 827,70
+            <div class="card col-4 gridProducto">
+                <img class="imgProducto" src="../multimedia/Imagenes/Comercial/Biblioratos/bibliorato-lomo-angosto-a4-blanco-onix.jpg" alt="Foto bibliorato angosto blanco">
+                <div class="card-body">
+                    <h5 class="card-title">Bibliorato angosto</h5>
+                    <p class="card-text">A4 Blanco</p>             
+                    <h5 class="card-text">$ 827,70</h5>   
                 </div>
             </div>    
-            <div class="gridProducto">
-                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Comercial/Biblioratos/bibliorato-lomo-angosto-a4-negro-onix.jpg" alt="Foto Producto">
-                </div>
-                <div class="gridDescripcion">
-                    <p class="tituloDescripcion">
-                        Bibliorato lomo angosto 
-                    </p>
-                    <p class="detalleDescripcion"> 
-                        A4 Negro
-                    </p>         
-                </div>
-                <div class="gridPrecio">$ 827,70
+            <div class="card col-4 gridProducto">
+                <img class="imgProducto" src="../multimedia/Imagenes/Comercial/Biblioratos/bibliorato-lomo-angosto-a4-negro-onix.jpg" alt="Foto bibliorato angosto Negro">
+                <div class="card-body">
+                    <h5 class="card-title">Bibliorato angosto</h5>
+                    <p class="card-text">A4 Negro</p> 
+                    <h5 class="card-text">$ 827,70</h5>         
                 </div>
             </div>
-            <div class="gridProducto"> 
-                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Comercial/Biblioratos/bibliorato-lomo-angosto-a4-verde-onix.jpg" alt="Foto Producto">
-                </div>
-                <div class="gridDescripcion">
-                    <p class="tituloDescripcion">
-                        Bibliorato lomo angosto 
-                    </p>
-                    <p class="detalleDescripcion"> 
-                        A4 Verde
-                    </p>             
-                </div>
-                <div class="gridPrecio">$ 827,70
+            <div class="card col-4 gridProducto"> 
+                <img class="imgProducto" src="../multimedia/Imagenes/Comercial/Biblioratos/bibliorato-lomo-angosto-a4-verde-onix.jpg" alt="Foto bibliorato angosto verde">
+                <div class="card-body">
+                    <h5 class="card-title">Bibliorato angosto</h5>
+                    <p class="card-text">A4 Verde</p>             
+                    <p class="card-text">$ 827,70</p>    
                 </div>
             </div>
-        </section>
-       <!-- Fin de secciones -->
+        </div>
+    </section>
+    <!-- Fin de secciones -->
     </main>
    <!-- Inicio footer -->
    <footer class="container contenedor py-3">
         <!-- Abre facebook de la libreria -->
         <a href="https://www.facebook.com/Librer%C3%ADa-El-Tr%C3%A9bol-246002999473697/">
-            <img src="../multimedia/Imagenes/iconofacebook2.jpg" alt="Facebook" class="col-4 multimedia">
+            <img src="../multimedia/Imagenes/iconofacebook2.webp" alt="Facebook" class="col-4 multimedia">
         </a>
         <!-- Pendiente: Ver como se puede abrir whatsapp para mensajes -->
         <a href="../pages/whatsapp.html">
-            <img src="../multimedia/Imagenes/iconoWhatsapp2.jpg" alt="Whatsapp" class="col-4 multimedia">
+            <img src="../multimedia/Imagenes/iconoWhatsapp2.webp" alt="Whatsapp" class="col-4 multimedia">
         </a>
         <!-- Muestra el mapa con la ubicacion -->
         <a href="../pages/dondeestamos.html">
-            <img src="../multimedia/Imagenes/iconomaps1.jpg" alt="dondeestamos" class="col-4 multimedia">
+            <img src="../multimedia/Imagenes/iconomaps1.webp" alt="dondeestamos" class="col-4 multimedia">
         </a>
     </footer>
 <!-- Fin footer -->  

@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Libreria El Trebol - Productos Escolares">
+    <meta name="keywords" content="Libreria, libreria escolar, libreria artistica, libreria comercial, impresiones laser, fotocopias">
+
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
      <!-- CSS -->
      <link rel="stylesheet" href="../css/estilos.css">
-    <title>Productos - Escolar</title>
+    <title>Libreria El Trebol - Productos escolares</title>
 </head>
 <body>
     <header class="contenedor container">
         <nav class="navbar navbar-expand-lg  ">
             <div class="container">
               <a class="navbar-brand w-25" href="#">
-                <img class="logoTrebol" src="../multimedia/Imagenes/Libreriaeltrebol2.jpg" alt="Logo de libreria El trebol">
+                <img class="logoTrebol" src="../multimedia/Imagenes/Libreriaeltrebol2.webp" alt="Logo de libreria El trebol">
               </a>
               <div class="container-fluid">
                   <h1>Librería El trébol </h1>
@@ -33,20 +36,20 @@
                             <a class="nav-link dropdown-toggle itemNombre" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Productos
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="itemMenu" href="../pages/productoEscolar.html">Escolar</a></li>
-                                <li><a class="itemMenu" href="../pages/productoArtistica.html">Artística</a></li>
-                                <li><a class="itemMenu" href="../pages/productoComercial.html">Comercial</a></li>
-                            </ul>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../pages/productoEscolar.html">Escolar</a>
+                                <a class="dropdown-item" href="../pages/productoArtistica.html">Artística</a>
+                                <a class="dropdown-item" href="../pages/productoComercial.html">Comercial</a>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle itemNombre" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Servicios
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="itemMenu" href="../pages/servicioFotocopia.html">Fotocopias</a></li>
-                                <li><a class="itemMenu" href="../pages/servicioImpresion.html">Impresiones</a></li>
-                            </ul>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../pages/servicioFotocopia.html">Fotocopias</a>
+                                <a class="dropdown-item" href="../pages/servicioImpresion.html">Impresiones</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link itemNombre" href="../pages/contacto.html">Contacto</a>
@@ -60,141 +63,97 @@
     <main>
         <!-- Inicio de secciones -->
         <!-- Armo seccion para las 4 columnas de los productos -->
-        <section class="gridGralProducto contenedor container">
-            <!-- Armo div para contener los datos de un producto -->
-            <div class="gridProducto">
+    <section class="container">
+        <!-- Armo div para contener los datos de un producto -->
+        <div class="row">
+            <div class="card col-4 gridProducto">
                 <!-- Armo div para la foto de un producto -->
-                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-2-cierres-basquet-con-luz-led-footy.jpg" alt="Foto Producto">
-                </div>
-                    <!-- Armo div para la descripcion  de un producto -->
-                <div class="gridDescripcion">
-                    <p class="tituloDescripcion">
-                        Canopla 2 cierres BASQUET
-                    </p>
-                    <p class="detalleDescripcion"> 
-                        Con luz led Footy 
-                    </p>
-                </div>
-                <!-- Armo div para el precio  de un producto -->
-                <div class="gridPrecio">$ 3.690,00
+                <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-2-cierres-basquet-con-luz-led-footy.jpg" alt="Foto canopla basquet con 2 cierres y luz">
+                <!-- Armo div para la descripcion  de un producto -->
+                <div class="card-body">
+                    <h5 class="card-title">Canopla 2 cierres BASQUET</h5>
+                    <p class="card-text">Con luz led Footy</p>
+                    <h5 class="card-text">$ 3.690,00</h5>
                 </div>
             </div>
-            <!-- repito para cada producto, defino 8, cuando aprenda como hacerlo la idea es alimentar la pagina desde una base de datos -->
-            <div class="gridProducto">
-                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-2-cierres-cool-friends-con-luz-led-footy.jpg" alt="Foto Producto">
-                </div>
-                <div class="gridDescripcion">
-                        <p class="tituloDescripcion">
-                            Canopla 2 cierres COOL FRIENDS
-                        </p>
-                        <p class="detalleDescripcion"> 
-                            Con luz led Footy 
-                        </p>    
-                </div>
-                <div class="gridPrecio">$ 3.690,00
-                </div>
-            </div>   
 
-            <div class="gridProducto">
-                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-2-cierres-estrella-i-con-luz-led-footy.jpg" alt="Foto Producto">
-                </div>
-                <div class="gridDescripcion">
-                    <p class="tituloDescripcion">
-                        Canopla 2 cierres ESTRELLA I
-                    </p>
-                    <p class="detalleDescripcion"> 
-                        Con luz led Footy 
-                    </p>     
-                </div>
-                <div class="gridPrecio">$ 3.431,00
+            <div class="card col-4 gridProducto">
+                <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-2-cierres-cool-friends-con-luz-led-footy.jpg" alt="Foto canopla friends con 2 cierres y luz">
+                <div class="card-body">
+                    <h5 class="card-title">Canopla 2 cierres COOL FRIENDS</h5>
+                    <p class="card-text">Con luz led Footy</p>    
+                    <h5 class="card-text">$ 3.690,00</h5>   
                 </div>
             </div>
-            <div class="gridProducto"> 
-                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-2-cierres-estrella-ii-con-luz-led-footy.jpg" alt="Foto Producto">
-                </div>
-                <div class="gridDescripcion">
-                    <p class="tituloDescripcion">
-                        Canopla 2 cierres ESTRELLA II
-                    </p>
-                    <p class="detalleDescripcion"> 
-                        Con luz led Footy
-                    </p>     
-                </div>
-                <div class="gridPrecio">$3.431,00
+            <div class="card col-4 gridProducto">
+                <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-2-cierres-estrella-i-con-luz-led-footy.jpg" alt="Foto canopla estrella con 2 cierres y luz">
+                <div class="card-body">
+                    <h5 class="card-title">Canopla 2 cierres ESTRELLA I</h5>
+                    <p class="card-text">Con luz led Footy</p>     
+                    <h5 class="card-text">$ 3.431,00</h5> 
                 </div>
             </div>
-            <div class="gridProducto">
-                <div class="gridFoto"><img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-box-47-street-mooving.jpg" alt="Foto Producto"> 
-                </div>
-                <div class="gridDescripcion">
-                    <p class="tituloDescripcion">
-                        Canopla Box 47 STREET Mooving 
-                    </p>
-                    <p class="detalleDescripcion"> 
-                        Con detalles y colores exclusivos de Mooving
-                    </p>         
-                </div>
-                <div class="gridPrecio">$ 1.943,70
+
+            <div class="card col-4 gridProducto"> 
+                <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-2-cierres-estrella-ii-con-luz-led-footy.jpg" alt="Foto canopla estrella con 2 cierres y luz">
+                <div class="card-body">
+                    <h5 class="card-title">Canopla 2 cierres ESTRELLA II</h5>
+                    <p class="card-text">Con luz led Footy</p>     
+                    <h5 class="card-text">$3.431,00</h5>
                 </div>
             </div>
-            <div class="gridProducto">
-                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-box-among-us-mooving.jpg" alt="Foto Producto">
+        </div>
+        
+        <div class="row">
+            <div class="card col-4 gridProducto">
+                <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-box-47-street-mooving.jpg" alt="Foto canopla box 47 street"> 
+                <div class="card-body">
+                    <h5 class="card-title">Canopla Box 47 STREET Mooving</h5>
+                    <p class="card-text">Con detalles y colores exclusivos de Mooving</p>         
+                    <h5 class="card-text">$ 1.943,70</h5>   
                 </div>
-                <div class="gridDescripcion">
-                    <p class="tituloDescripcion">
-                        Canopla Box AMONG US Mooving 
-                    </p>
-                    <p class="detalleDescripcion"> 
-                        Con detalles y colores exclusivos de Mooving
-                    </p>             
-                </div>
-                <div class="gridPrecio">$ 1.990,00
+            </div>
+            <div class="card col-4 gridProducto">
+                <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-box-among-us-mooving.jpg" alt="Foto canopla box among us">
+                <div class="card-body">
+                    <h5 class="card-title">Canopla Box AMONG US Mooving</h5>
+                    <p class="card-text">Con detalles y colores exclusivos de Mooving</p>             
+                    <h5 class="card-text">$ 1.990,00</h5> 
                 </div>
             </div>    
-            <div class="gridProducto">
-                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-box-mickey-mouse-mooving.jpg" alt="Foto Producto">
-                </div>
-                <div class="gridDescripcion">
-                    <p class="tituloDescripcion">
-                        Canopla Box MICKEY MOUSE Mooving 
-                    </p>
-                    <p class="detalleDescripcion"> 
-                        Con dibujo de MICKEY MOUSE en relieve
-                    </p>         
-                </div>
-                <div class="gridPrecio">$ 1.943,59
+            <div class="card col-4 gridProducto">
+                <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-box-mickey-mouse-mooving.jpg" alt="Foto canopla box mickey mouse">
+                <div class="card-body">
+                    <h5 class="card-title">Canopla Box MICKEY MOUSE Mooving</h5>
+                    <p class="card-text">Con dibujo de MICKEY MOUSE en relieve</p>         
+                    <h5 class="card-text">$ 1.943,59</h5>  
                 </div>
             </div>
-            <div class="gridProducto"> 
-                <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-box-minnie-mouse-mooving.jpg" alt="Foto Producto">
-                </div>
-                <div class="gridDescripcion">
-                    <p class="tituloDescripcion">
-                        Canopla Box MINNIE MOUSE Mooving
-                    </p>
-                    <p class="detalleDescripcion"> 
-                        Con dibujo de MINNIE MOUSE en relieve
-                    </p>             
-                </div>
-                <div class="gridPrecio">$ 1.943,59
+            <div class="card col-4 gridProducto"> 
+                <img class="imgProducto" src="../multimedia/Imagenes/Escolar/canopla-box-minnie-mouse-mooving.jpg" alt="Foto canopla box minnie">
+                <div class="card-body">
+                    <h5 class="card-title">Canopla Box MINNIE MOUSE Mooving</h5>
+                    <p class="card-text">Con dibujo de MINNIE MOUSE en relieve</p>             
+                    <h5 class="card-text">$ 1.943,59</h5>   
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     <!-- Fin de secciones -->
     </main>
    <!-- Inicio footer -->
    <footer class="container contenedor py-3">
     <!-- Abre facebook de la libreria -->
         <a href="https://www.facebook.com/Librer%C3%ADa-El-Tr%C3%A9bol-246002999473697/">
-            <img src="../multimedia/Imagenes/iconofacebook2.jpg" alt="Facebook" class="col-4 multimedia">
+            <img src="../multimedia/Imagenes/iconofacebook2.webp" alt="Facebook" class="col-4 multimedia">
         </a>
         <!-- Pendiente: Ver como se puede abrir whatsapp para mensajes -->
         <a href="../pages/whatsapp.html">
-            <img src="../multimedia/Imagenes/iconoWhatsapp2.jpg" alt="Whatsapp" class="col-4 multimedia">
+            <img src="../multimedia/Imagenes/iconoWhatsapp2.webp" alt="Whatsapp" class="col-4 multimedia">
         </a>
         <!-- Muestra el mapa con la ubicacion -->
         <a href="../pages/dondeestamos.html">
-            <img src="../multimedia/Imagenes/iconomaps1.jpg" alt="dondeestamos" class="col-4 multimedia">
+            <img src="../multimedia/Imagenes/iconomaps1.webp" alt="dondeestamos" class="col-4 multimedia">
         </a>
     </footer>
     <!-- Fin footer -->  

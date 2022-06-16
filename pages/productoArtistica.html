@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Libreria El Trebol - Productos artísticos">
+    <meta name="keywords" content="Libreria, libreria escolar, libreria artistica, libreria comercial, impresiones laser, fotocopias">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Productos - Artística</title>
+    <title>Libreria El Trebol - Productos para  artística</title>
 </head>
 <body>
     <header class="contenedor container">
         <nav class="navbar navbar-expand-lg  ">
             <div class="container">
               <a class="navbar-brand w-25" href="#">
-                <img class="logoTrebol" src="../multimedia/Imagenes/Libreriaeltrebol2.jpg" alt="Logo de libreria El trebol">
+                <img class="logoTrebol" src="../multimedia/Imagenes/Libreriaeltrebol2.webp" alt="Logo de libreria El trebol">
               </a>
                 <div class="container-fluid">
                     <h1>Librería El trébol </h1>
@@ -33,20 +35,20 @@
                             <a class="nav-link dropdown-toggle itemNombre" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Productos
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="itemMenu" href="../pages/productoEscolar.html">Escolar</a></li>
-                                <li><a class="itemMenu" href="../pages/productoArtistica.html">Artística</a></li>
-                                <li><a class="itemMenu" href="../pages/productoComercial.html">Comercial</a></li>
-                            </ul>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../pages/productoEscolar.html">Escolar</a>
+                                <a class="dropdown-item" href="../pages/productoArtistica.html">Artística</a>
+                                <a class="dropdown-item" href="../pages/productoComercial.html">Comercial</a>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle itemNombre" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Servicios
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="itemMenu" href="../pages/servicioFotocopia.html">Fotocopias</a></li>
-                                <li><a class="itemMenu" href="../pages/servicioImpresion.html">Impresiones</a></li>
-                            </ul>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../pages/servicioFotocopia.html">Fotocopias</a>
+                                <a class="dropdown-item" href="../pages/servicioImpresion.html">Impresiones</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link itemNombre" href="../pages/contacto.html">Contacto</a>
@@ -59,124 +61,79 @@
     <!-- Fin header -->
     <main>
     <!-- Inicio de secciones -->
-        <!-- Armo seccion para las 4 columnas de los productos -->
-        <section class="contenedor gridGralProducto container">
+    <section class="container">
         <!-- Armo div para contener los datos de un producto -->
-        <div class="gridProducto">
-            <!-- Armo div para la foto de un producto -->
-            <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Artistica/estuche-madera-cretacolor-47050-x36-pasteles-a-la-tiza-koh-i-noor.jpg" alt="Foto Producto">
-            </div>
+        <div class="row">
+            <div class="card col-4 gridProducto">
+                <!-- Foto de un producto -->
+                <img class="imgProducto" src="../multimedia/Imagenes/Artistica/estuche-madera-cretacolor-47050-x36-pasteles-a-la-tiza-koh-i-noor.webp" alt="Foto Estuche de madera cretacolor -x36">
                 <!-- Armo div para la descripcion  de un producto -->
-            <div class="gridDescripcion">
-                <p class="tituloDescripcion">
-                    Estuche Madera Cretacolor 47050 x 36
-                </p>
-                <p class="detalleDescripcion"> 
-                    Pastel a la tiza Cretacolor Koh-I-Noor
-                </p>
+                <div class="card-body">
+                    <h6 class="card-title">Estuche Cretacolor x 36</h6>
+                    <p class="card-text">Pastel a la tiza </p>
+                    <!-- Armo div para el precio  de un producto -->
+                    <h5>$ 27.807,00</h5>
+                </div>
             </div>
-            <!-- Armo div para el precio  de un producto -->
-            <span class="gridPrecio">$ 27.807,00
-            </span>
-        </div>
-        <!-- repito para cada producto, defino 8, cuando aprenda como hacerlo la idea es alimentar la pagina desde una base de datos -->
-        <div class="gridProducto">
-            <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Artistica/lapices-acuarelables-pastel-carbothello-x19-colores-estuche-de-madera-stabilo.jpg" alt="Foto Producto">
+        
+            <div class="card col-4 gridProducto" >
+                <img class="imgProducto" src="../multimedia/Imagenes/Artistica/lapices-acuarelables-pastel-carbothello-x19-colores-estuche-de-madera-stabilo.webp" alt="Foto lapices acuarelables pastel carbothello x 19">
+                <div class="card-body">
+                        <h5 class="card-title">Lapices Acuarelables Pastel Carbothello x19</h5>
+                        <p class="card-text">Estuche de Madera Stabilo</p>  
+                        <h5 class="card-text">$ 9.755,90 </h5>  
+                </div>
+            </div>   
+            <div class="card col-4 gridProducto" >
+                <img class="imgProducto" src="../multimedia/Imagenes/Artistica/lapiz-gioconda-monocromo-8801-02-03-04-8815-01-02-3-koh-i-noor.webp" alt="Foto lapiz gioconda monocromo">
+                <div class="card-body">
+                    <h5 class="card-title">Lapiz monocromo</h5>
+                    <p class="card-text">8801/02/03/04</p>
+                    <h5 class="card-text">$ 455,00</h5>     
+                </div>
             </div>
-            <div class="gridDescripcion">
-                    <p class="tituloDescripcion">
-                        Lapices Acuarelables Pastel Carbothello x19
-                    </p>
-                    <p class="detalleDescripcion"> 
-                        Estuche de Madera Stabilo
-                    </p>    
-            </div>
-            <div class="gridPrecio">$ 9.755,90
-            </div>
-        </div>   
 
-        <div class="gridProducto">
-            <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Artistica/lapiz-gioconda-monocromo-8801-02-03-04-8815-01-02-3-koh-i-noor.jpg" alt="Foto Producto">
-            </div>
-            <div class="gridDescripcion">
-                <p class="tituloDescripcion">
-                    Lapiz Gioconda monocromo
-                </p>
-                <p class="detalleDescripcion"> 
-                    8801/02/03/04 // 8815-01/02/3 
-                </p>     
-            </div>
-            <div class="gridPrecio">$ 455,00
+            <div class="card col-4 gridProducto" > 
+                <img class="imgProducto" src="../multimedia/Imagenes/Artistica/lapiz-pastel-lata-x-12-unidades-derwent.webp" alt="Lapiz pastel derwent x12">
+                <div class="card-body">
+                    <h5 class="card-title">Lapiz pastel Derwent</h5>
+                    <p class="card-text">Lata por 12 unidades</p>     
+                    <h5 class="card-text">$6.928,00</h5>     
+                </div>
             </div>
         </div>
-        <div class="gridProducto"> 
-            <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Artistica/lapiz-pastel-lata-x-12-unidades-derwent.jpg" alt="Foto Producto">
+        <div class="row">
+            <div class="card col-4 gridProducto" >
+                <img class="imgProducto" src="../multimedia/Imagenes/Artistica/lapiz-pastel-lata-x-36-unidades-derwent.webp" alt="Lapiz pastel derwent x12"> 
+                <div class="card-body">
+                    <h5 class="card-title">Lapiz pastel Derwent</h5>
+                    <p class="card-text">Lata por 36 unidades</p>         
+                    <h5 class="card-text">$ 20.367,80</h5> 
+                </div>
             </div>
-            <div class="gridDescripcion">
-                <p class="tituloDescripcion">
-                    Lapiz pastel Derwent
-                </p>
-                <p class="detalleDescripcion"> 
-                    Lata por 12 unidades
-                </p>     
+            <div class="card col-4 gridProducto" >
+                <img class="imgProducto" src="../multimedia/Imagenes/Artistica/lapiz-tiza-pastel-acuarelable-carbothello-x-unidad-stabilo.webp" alt="Foto lapices acuarelables pastel carbothello x unidad">
+                <div class="card-body">
+                    <h5 class="card-title">Lápiz ACUARELABLE</h5>
+                    <p class="card-text">Por unidad</p>    
+                    <h5 class="card-text">$ 409,20</h5>             
+                </div>
+            </div>    
+            <div class="card col-4 gridProducto" >
+                <img class="imgProducto" src="../multimedia/Imagenes/Artistica/oleo-pastel-x-12-col-eureka.jpg" alt="Foto oleo pastel eureka x 12">
+                <div class="card-body">
+                    <h5 class="card-title">Oleo pastel Eureka </h5>
+                    <p class="card-text">Por 12 colores</p>         
+                    <h5 class="card-text">$ 1.106,70</h5>    
+                </div>
             </div>
-            <div class="gridPrecio">$6.928,00
-            </div>
-        </div>
-        <div class="gridProducto">
-            <div class="gridFoto"><img class="imgProducto" src="../multimedia/Imagenes/Artistica/lapiz-pastel-lata-x-36-unidades-derwent.jpg" alt="Foto Producto"> 
-            </div>
-            <div class="gridDescripcion">
-                <p class="tituloDescripcion">
-                    Lapiz pastel Derwent
-                </p>
-                <p class="detalleDescripcion"> 
-                    Lata por 36 unidades
-                </p>         
-            </div>
-            <div class="gridPrecio">$ 20.367,80
-            </div>
-        </div>
-        <div class="gridProducto">
-            <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Artistica/lapiz-tiza-pastel-acuarelable-carbothello-x-unidad-stabilo.jpg" alt="Foto Producto">
-            </div>
-            <div class="gridDescripcion">
-                <p class="tituloDescripcion">
-                    Lápiz Tiza Pastel ACUARELABLE Carbothello
-                </p>
-                <p class="detalleDescripcion"> 
-                    Por unidad
-                </p>             
-            </div>
-            <div class="gridPrecio">$ 409,20
-            </div>
-        </div>    
-        <div class="gridProducto">
-            <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Artistica/oleo-pastel-x-12-col-eureka.jpg" alt="Foto Producto">
-            </div>
-            <div class="gridDescripcion">
-                <p class="tituloDescripcion">
-                    Oleo pastel Eureka
-                </p>
-                <p class="detalleDescripcion"> 
-                    Por 12 colores
-                </p>         
-            </div>
-            <div class="gridPrecio">$ 1.106,70
-            </div>
-        </div>
-        <div class="gridProducto"> 
-            <div class="gridFoto"> <img class="imgProducto" src="../multimedia/Imagenes/Artistica/oleo-pastel-x-24-colores-eureka.jpg" alt="Foto Producto">
-            </div>
-            <div class="gridDescripcion">
-                <p class="tituloDescripcion">
-                    Oleo pastel Eureka
-                </p>
-                <p class="detalleDescripcion"> 
-                    Por 24 colores
-                </p>             
-            </div>
-            <div class="gridPrecio">$ 1.971,60
+            <div class="card col-4 gridProducto">
+                <img class="imgProducto" src="../multimedia/Imagenes/Artistica/oleo-pastel-x-24-colores-eureka.jpg" alt="Foto oleo pastel eureka x 24">
+                <div class="card-body">
+                    <h5 class="card-title">Oleo pastel Eureka</h5>
+                    <p class="card-text">Por 24 colores</p>             
+                    <h5 class="card-text">$ 1.971,60</h5>        
+                </div>
             </div>
         </div>
     </section>
@@ -186,15 +143,15 @@
    <footer class="container contenedor py-3">
     <!-- Abre facebook de la libreria -->
         <a href="https://www.facebook.com/Librer%C3%ADa-El-Tr%C3%A9bol-246002999473697/">
-            <img src="../multimedia/Imagenes/iconofacebook2.jpg" alt="Facebook" class="col-4 multimedia">
+            <img src="../multimedia/Imagenes/iconofacebook2.webp" alt="Facebook" class="col-4 multimedia">
         </a>
         <!-- Pendiente: Ver como se puede abrir whatsapp para mensajes -->
         <a href="../pages/whatsapp.html">
-            <img src="../multimedia/Imagenes/iconoWhatsapp2.jpg" alt="Whatsapp" class="col-4 multimedia">
+            <img src="../multimedia/Imagenes/iconoWhatsapp2.webp" alt="Whatsapp" class="col-4 multimedia">
         </a>
         <!-- Muestra el mapa con la ubicacion -->
         <a href="../pages/dondeestamos.html">
-            <img src="../multimedia/Imagenes/iconomaps1.jpg" alt="dondeestamos" class="col-4 multimedia">
+            <img src="../multimedia/Imagenes/iconomaps1.webp" alt="dondeestamos" class="col-4 multimedia">
         </a>
     </footer>
 <!-- Fin footer -->  

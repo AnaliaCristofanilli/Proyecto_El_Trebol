@@ -18,6 +18,10 @@ h2 {
     font-size:2em;
 }
  
+h5 {
+    display: flex ;
+    justify-content: center;
+}
 ul {
     list-style: none;
     font-size:0.5em; // truco por el uso de inline-block
@@ -50,4 +54,7 @@ body{
 p {
     font-family: Verdana, sans-serif;
     font-style: italic;
-    font-size:  1em;}
+    font-size:  1em;
+    display: flex ;
+    justify-content: center;
+}
