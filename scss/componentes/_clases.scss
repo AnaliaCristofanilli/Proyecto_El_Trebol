@@ -57,6 +57,13 @@ background-image: url(../../multimedia/Imagenes/comercial.webp);
         transform: scale(1.1,1.1);
     }
 }
+.textoResaltado {
+    margin-left:3em;
+    color:$color;
+    background-color: $colorShadow;
+    font-size: 1.3em;
+    border-radius: 10%;
+}
 .logoTrebol {
     width:100%;
     padding-right: 2em;
@@ -91,6 +98,23 @@ background-image: url(../../multimedia/Imagenes/comercial.webp);
 .imgProducto {
     width:100%;
 }
+/*clases para maps responsive*/
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 100%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
 /* Animaciones/transformaciones */
 .dondeEstamos{
     width: 500px;

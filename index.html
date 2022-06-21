@@ -17,7 +17,7 @@
     <header class="contenedor container">
         <nav class="navbar navbar-expand-lg  ">
             <div class="container">
-              <a class="navbar-brand w-25" href="#">
+              <a class="navbar-brand w-25" href="index.html">
                 <img class="logoTrebol" src="multimedia/Imagenes/Libreriaeltrebol2.webp" alt="Logo de libreria El trebol">
               </a>
                 <div class="container-fluid">
@@ -104,25 +104,25 @@
         <section id="productos" class="container contenedor py-3 px-5" >
             <div class="row">
                 <div class="col-4  d-flex justify-content-center" >
-                <div class=" tarjeta tarjetaEscolar"> 
                     <a href="pages/productoEscolar.html"  >
-                        <span class="textoResaltado">Escolar</span>  
-                    </a>
+                        <div class="tarjeta tarjetaEscolar"> 
+                            <span class="textoResaltado">Escolar</span> 
+                        </div>
+                    </a> 
                 </div>
-            </div>
-            <div class="col-4 d-flex justify-content-center" >
-                <div class="tarjeta tarjetaArtistica"> 
-                    <a href="pages/productoArtistica.html">
-                        <span class="textoResaltado">Artistica</span> 
-                    </a>
-                </div>
-            </div>
                 <div class="col-4 d-flex justify-content-center" >
-                    <div class=" tarjeta tarjetaComercial"> 
-                        <a href="pages/productoComercial.html" >
-                            <span class="textoResaltado">Comercial</span> 
-                        </a>
-                    </div>
+                    <a href="pages/productoArtistica.html">
+                        <div class="tarjeta tarjetaArtistica"> 
+                            <span class="textoResaltado">Artistica</span> 
+                        </div>
+                    </a> 
+                </div>
+                <div class="col-4 d-flex justify-content-center" >
+                    <a href="pages/productoComercial.html">
+                        <div class=" tarjeta tarjetaComercial"> 
+                           <span class="textoResaltado">Comercial</span> 
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -130,14 +130,15 @@
         <section id="servicios" class="container contenedor py-3" >
             <div class="row">
                 <div class="col-6 d-flex justify-content-center" >
-                    <div class="tarjeta tarjetaFotocopia"> 
-                        <a href="pages/servicioFotocopia.html">Fotocopias</a>
-                    </div>
+                    <a href="pages/servicioFotocopia.html">
+                        <div class="tarjeta tarjetaFotocopia"></div>
+                    </a>
                 </div>
                 <div class="col-6 d-flex justify-content-center" >
-                    <div class="tarjeta tarjetaImpresion"> 
-                        <a href="pages/servicioImpresion.html">Impresiones</a>
-                    </div>
+                    <a href="pages/servicioImpresion.html">
+                        <div class="tarjeta tarjetaImpresion"> 
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -150,10 +151,6 @@
         <!-- Abre facebook de la libreria -->
         <a href="https://www.facebook.com/Librer%C3%ADa-El-Tr%C3%A9bol-246002999473697/">
             <img src="multimedia/Imagenes/iconofacebook2.webp" alt="Facebook" class="col-4 multimedia">
-        </a>
-        <!-- Pendiente: Ver como se puede abrir whatsapp para mensajes -->
-        <a href="pages/whatsapp.html">
-            <img src="multimedia/Imagenes/iconoWhatsapp2.webp" alt="Whatsapp" class="col-4 multimedia">
         </a>
         <!-- Muestra el mapa con la ubicacion -->
         <a href="pages/dondeestamos.html">
