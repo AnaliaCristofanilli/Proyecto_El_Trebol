@@ -22,40 +22,38 @@
     width: 20em;
     height: 10em;
 }
-.tarjetaEscolar {
-    background-image: url(../multimedia/Imagenes/escolar.webp);
+
+.tarjetaHover {
     &:hover {
         opacity: 0.7 ; 
         transform: scale(1.1,1.1);
     }
+}
+
+.tarjetaEscolar {
+    background-image: url(../multimedia/Imagenes/escolar.webp);
+    @extend .tarjetaHover;
 }
 .tarjetaArtistica {
     background-image: url(../../../multimedia/Imagenes/artistica.webp);
-    &:hover {
-        opacity: 0.7 ; 
-        transform: scale(1.1,1.1);
-    }
+    @extend .tarjetaHover;
 }
 .tarjetaComercial {
-background-image: url(../../multimedia/Imagenes/comercial.webp);
-    &:hover {
-        opacity: 0.7 ; 
-        transform: scale(1.1,1.1);
-    } 
+    background-image: url(../../multimedia/Imagenes/comercial.webp);
+    @extend .tarjetaHover;
 }
 .tarjetaFotocopia {
-    background-image: url(../../multimedia/Imagenes/Fotocopia1.webp);
-    &:hover {
-        opacity: 0.7 ; 
-        transform: scale(1.1,1.1);
-    }
+    background-image: url(../../multimedia/Imagenes/fotocopia1.webp);
+    @extend .tarjetaHover;
 }
 .tarjetaImpresion {
     background-image: url(../../multimedia/Imagenes/Impresiones1.webp);
-    &:hover {
-        opacity: 0.7 ; 
-        transform: scale(1.1,1.1);
-    }
+    @extend .tarjetaHover;
+}
+.card-title {
+    display: flex ;
+    justify-content: center;
+    font-size: large;
 }
 .textoResaltado {
     margin-left:3em;
@@ -65,14 +63,13 @@ background-image: url(../../multimedia/Imagenes/comercial.webp);
     border-radius: 10%;
 }
 .logoTrebol {
-    width:100%;
     padding-right: 2em;
     padding-left: 2em;
     padding-top: 2em;
 }
 
 .multimedia {
-    width:3%;
+    width:5%;
 }
 
 .btn-color {

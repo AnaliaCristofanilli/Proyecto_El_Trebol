@@ -1,30 +1,26 @@
 @import "_variables";
-/*Etiquetas HTML*/
+
+@mixin titulo_h {
+    color: $color;
+    font-family: $fontFamilyTitulo;
+  }
 
 h1 {
-    color: $color;
-    font-family: 'Lucida Sans';
+    @include titulo_h;
     font-size:3em; 
     
-    //sombra horizontal, sombra vertical, blur, color 
-    
-        text-shadow: 0 0 10px $colorShadow,
-        0 0 3em $colorShadow,
-        0 0 3em  $colorShadow;
+    text-shadow: 0 0 10px $colorShadow,
+    0 0 3em $colorShadow,
+    0 0 3em  $colorShadow;
 } 
 h2 {
-    color:$color;  
-    font-family: $fontFamilyTitulo;
+    @include titulo_h;
     font-size:2em;
 }
  
-h5 {
-    display: flex ;
-    justify-content: center;
-}
 ul {
     list-style: none;
-    font-size:0.5em; // truco por el uso de inline-block
+    font-size:0.5em; 
     li {
         display:inline-block;    
         position:relative;
@@ -35,7 +31,6 @@ ul {
         width: 10em;
         &:hover {
             color:$color;
-            //sombra horizontal, sombra vertical, blur, color
             text-shadow: 0 0 10px $colorShadow,
             0 0 20px $colorShadow,
             0 0 40px $colorShadow;
@@ -52,9 +47,13 @@ body{
     font-style: $fontStyleDetalle;
 }
 p {
-    font-family: Verdana, sans-serif;
+    font-family: $fontFamilyDetalle;
     font-style: italic;
     font-size:  1em;
     display: flex ;
     justify-content: center;
+}
+
+img {
+    border-radius: 10%;
 }

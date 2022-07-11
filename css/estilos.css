@@ -1,7 +1,6 @@
-/*Etiquetas HTML*/
 h1 {
   color: #622FBD;
-  font-family: 'Lucida Sans';
+  font-family: "Lucida Sans";
   font-size: 3em;
   text-shadow: 0 0 10px #fff, 0 0 3em #fff, 0 0 3em #fff; }
 
@@ -9,10 +8,6 @@ h2 {
   color: #622FBD;
   font-family: "Lucida Sans";
   font-size: 2em; }
-
-h5 {
-  display: flex;
-  justify-content: center; }
 
 ul {
   list-style: none;
@@ -43,6 +38,9 @@ p {
   display: flex;
   justify-content: center; }
 
+img {
+  border-radius: 10%; }
+
 /*Clases*/
 .contenedor {
   background-color: #5ab65c;
@@ -66,35 +64,29 @@ p {
   width: 20em;
   height: 10em; }
 
+.tarjetaHover:hover, .tarjetaEscolar:hover, .tarjetaArtistica:hover, .tarjetaComercial:hover, .tarjetaFotocopia:hover, .tarjetaImpresion:hover {
+  opacity: 0.7;
+  transform: scale(1.1, 1.1); }
+
 .tarjetaEscolar {
   background-image: url(../multimedia/Imagenes/escolar.webp); }
-  .tarjetaEscolar:hover {
-    opacity: 0.7;
-    transform: scale(1.1, 1.1); }
 
 .tarjetaArtistica {
   background-image: url(../../../multimedia/Imagenes/artistica.webp); }
-  .tarjetaArtistica:hover {
-    opacity: 0.7;
-    transform: scale(1.1, 1.1); }
 
 .tarjetaComercial {
   background-image: url(../../multimedia/Imagenes/comercial.webp); }
-  .tarjetaComercial:hover {
-    opacity: 0.7;
-    transform: scale(1.1, 1.1); }
 
 .tarjetaFotocopia {
-  background-image: url(../../multimedia/Imagenes/Fotocopia1.webp); }
-  .tarjetaFotocopia:hover {
-    opacity: 0.7;
-    transform: scale(1.1, 1.1); }
+  background-image: url(../../multimedia/Imagenes/fotocopia1.webp); }
 
 .tarjetaImpresion {
   background-image: url(../../multimedia/Imagenes/Impresiones1.webp); }
-  .tarjetaImpresion:hover {
-    opacity: 0.7;
-    transform: scale(1.1, 1.1); }
+
+.card-title {
+  display: flex;
+  justify-content: center;
+  font-size: large; }
 
 .textoResaltado {
   margin-left: 3em;
@@ -104,13 +96,12 @@ p {
   border-radius: 10%; }
 
 .logoTrebol {
-  width: 100%;
   padding-right: 2em;
   padding-left: 2em;
   padding-top: 2em; }
 
 .multimedia {
-  width: 3%; }
+  width: 5%; }
 
 .btn-color {
   background-color: #622FBD;
