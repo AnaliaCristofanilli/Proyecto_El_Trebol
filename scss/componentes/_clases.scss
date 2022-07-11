@@ -1,5 +1,8 @@
 @import "_variables";
 /*Clases*/
+.disclaimer {
+    display: none;
+   }
 .contenedor{ 
     background-color:$colorBackContenedor;
     color: $color;

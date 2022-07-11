@@ -42,6 +42,9 @@ img {
   border-radius: 10%; }
 
 /*Clases*/
+.disclaimer {
+  display: none; }
+
 .contenedor {
   background-color: #5ab65c;
   color: #622FBD;
